@@ -37,12 +37,18 @@ body {
     cursor: pointer;
     background-color: rgb(231, 231, 58);
 }
+
+
 .card img {
     max-width: 100%;
 }
 .card h3 {
     
     margin: 8px;
+}
+
+.card:active {
+    box-shadow: none;
 }
 
 
