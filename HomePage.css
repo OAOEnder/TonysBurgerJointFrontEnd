@@ -13,25 +13,51 @@ body {
 
 .menu-container {
     display: flex;
-    flex-wrap: wrap;
-    outline: 2px solid blue;
-    margin-top: 10px;
-
-    padding: 0
-
-}
-
-
-.menu-container div {
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: lightgray;
     outline: 2px solid black;
-    margin: 10px;
-    
+    padding: 12px;
+
 }
 
-.menu-container div h4, p {
-padding: 10px;
-margin-left: 10px;
+.card {
+    
+    margin: 10px;
+    width: 0px;
+    width: 15rem;
+    outline: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0px 10px 12px 2px;
 }
+.card:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 58);
+}
+
+.card img {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.item_text {
+    display: flex;
+    height: 5rem;
+    justify-content: center;
+}
+.menu_header {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 
