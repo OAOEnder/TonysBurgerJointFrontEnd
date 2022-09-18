@@ -1,14 +1,8 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
->>>>>>> origin/main
 
 * {
     box-sizing: border-box;
 }
-<<<<<<< HEAD
-=======
 header {
     display: flex;
     justify-content: space-between;
@@ -16,56 +10,11 @@ header {
     padding: 30px 10%;
     background-image: linear-gradient(to bottom, #F8F8FF, #4c00ff8e);
 }
->>>>>>> origin/main
 
 
 body {
     margin: 0;
     padding: 0;
-<<<<<<< HEAD
-}
-
-
-
-.menu-container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    
-    
-   
-    
-    
-
-}
-
-.card {
-     
-    width: 15rem;
-    outline: 2px solid black;
-    border-radius: 8px;
-    box-shadow: 0px 10px 12px 2px;
-    text-align: center;
-    margin: 4px;
-    background-color: rgb(221, 162, 52);
-}
-.card:hover {
-    cursor: pointer;
-    background-color: rgb(231, 231, 58);
-}
-
-
-.card img {
-    max-width: 100%;
-}
-.card h3 {
-    
-    margin: 8px;
-}
-
-.card:active {
-    box-shadow: none;
-=======
     
 }
 .logo{
@@ -129,90 +78,6 @@ li, a, button {
 .menu-container div h4, p {
 padding: 10px;
 margin-left: 10px;
->>>>>>> origin/main
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
->>>>>>> origin/main
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<<<<<<< HEAD
-
-=======
-
-* {
-    box-sizing: border-box;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    outline: 2px solid blue;
-    margin-top: 10px;
-
-    padding: 0
-
-}
-
-
-.menu-container div {
-    outline: 2px solid black;
-    margin: 10px;
-    
-}
-
-.menu-container div h4, p {
-padding: 10px;
-margin-left: 10px;
 }
 
 
@@ -244,7 +109,3 @@ margin-left: 10px;
 
 
 
-
->>>>>>> main
-=======
->>>>>>> origin/main
