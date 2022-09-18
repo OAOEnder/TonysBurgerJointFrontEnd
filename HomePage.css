@@ -1,13 +1,28 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+>>>>>>> origin/main
 
 * {
     box-sizing: border-box;
 }
+<<<<<<< HEAD
+=======
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-image: linear-gradient(to bottom, #F8F8FF, #4c00ff8e);
+}
+>>>>>>> origin/main
 
 
 body {
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
 }
 
 
@@ -50,6 +65,71 @@ body {
 
 .card:active {
     box-shadow: none;
+=======
+    
+}
+.logo{
+    cursor: pointer;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+nav_links li a :hover{
+    color: #0088a9
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+#yellowGradientDiv{
+    background-image: linear-gradient(to top, #F8F8FF, #FFD700);
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    outline: 2px solid blue;
+    margin-top: 10px;
+    
+    padding: 0;
+
+}
+
+
+.menu-container div {
+    outline: 2px solid black;
+    margin: 10px;
+    
+}
+
+.menu-container div h4, p {
+padding: 10px;
+margin-left: 10px;
+>>>>>>> origin/main
 }
 
 
@@ -68,6 +148,7 @@ body {
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -81,6 +162,8 @@ body {
 
 
 
+=======
+>>>>>>> origin/main
     
 
 
@@ -94,6 +177,7 @@ body {
 
 
 
+<<<<<<< HEAD
 
 =======
 
@@ -162,3 +246,5 @@ margin-left: 10px;
 
 
 >>>>>>> main
+=======
+>>>>>>> origin/main
