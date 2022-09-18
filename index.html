@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -135,4 +136,122 @@ async function addItem() {
 
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="HomePage.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+
+   
+<div id="menu-container" class="menu-container">
+
+
+
+</div>
+<h1>Add item to menu</h1>
+<form   id="addItem"> 
+    <label for="Item_Name">Item Name</label></br>
+    <input type="text" id="Item_Name" name="Item_Name"></br>
+    <label for="Price">Item Price</br>
+    <input type="text" id="Item_Price" name="Item_Price"></br>
+    <button onclick="addItem()">Add Item</button>
+
+</form>
+
+   
+    
+
+<script>
+
+
+
+
+
+
+
+async function getMenu() {
+    let response = await fetch('http://localhost:8080/');
+    let data = await response.json();
+    return data
+}
+
+function createCard(itemName, itemPrice) {
+ let menu_container = document.getElementById("menu-container");
+ let item_head = document.createElement("div");
+ let img = document.createElement("img");
+ img.src = "logo.png";
+ img.alt = "Item Pic"
+ item_head.appendChild(img);
+
+ let item_data = document.createElement("div");
+ let item = document.createElement("h4");
+ let price = document.createElement("p");
+ item.innerText = itemName;
+ price.innerText = itemPrice;
+ item_data.appendChild(item);
+ item_data.appendChild(price);
+item_head.appendChild(item_data);
+menu_container.appendChild(item_head);
+ 
+ 
+
+}
+
+
+
+
+
+
+function addMenu() {
+   
+    getMenu().then(data => {
+        for(let item in data) {
+            createCard(data[item].itemName, data[item].itemPrice);
+            console.log(data[item]);
+            
+        }
+    });
+        
+   
+}
+
+
+addMenu();
+
+
+async function addItem() {
+   let  itemName = document.getElementById('Item_Name').value;
+    let  itemPrice = document.getElementById('Item_Price').value;
+   
+    const response = await fetch("http://localhost:8080/menu", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({itemName:itemName, itemPrice: itemPrice})
+    })
+
+}
+
+
+
+
+
+
+    
+
+
+
+    </script>
+
+
+</body>
+
+>>>>>>> main
 </html>
