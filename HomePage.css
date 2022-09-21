@@ -8,7 +8,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-image: linear-gradient(to bottom, #F8F8FF, #4c00ff8e);
+    background-image: linear-gradient(to bottom, #F8F8FF, #1d5f7e);
 }
 
 
@@ -19,6 +19,8 @@ body {
 }
 .logo{
     cursor: pointer;
+    width: 80px;
+    height: 80px;
 }
 .nav_links{
     list-style: none;
@@ -55,16 +57,21 @@ li, a, button {
 }
 
 #yellowGradientDiv{
+    margin-top: 0;
+    padding-top: 0;
     background-image: linear-gradient(to top, #F8F8FF, #FFD700);
 }
 
 .menu-container {
     display: flex;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
     outline: 2px solid blue;
     margin-top: 10px;
     
-    padding: 0;
+    
+    padding-top: 0;
 
 }
 
@@ -80,6 +87,88 @@ padding: 10px;
 margin-left: 10px;
 }
 
+.slideshow-containter{
+max-width: 800px;
+position: relative;
+margin: auto;
+margin-top: 20px;
+
+}
+
+/*Displays first image*/
+#slide1{
+    display: block;
+}
+/*Hides images by default so they dont display down the page */
+.mySlides{
+    display: none;
+}
+
+
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0, 3px, 3px, 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.slideshow-caption {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.slideshow-number{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 
 
